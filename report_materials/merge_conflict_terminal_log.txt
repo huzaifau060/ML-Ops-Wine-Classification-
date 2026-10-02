@@ -1,0 +1,33 @@
+﻿$ git checkout main
+Switched to branch 'main'
+
+$ git merge conflict-simulation
+Auto-merging src/config.py
+CONFLICT (content): Merge conflict in src/config.py
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git status
+On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   src/config.py
+
+$ cat src/config.py
+"""Configuration settings for the Wine MLOps pipeline."""
+
+MODEL_NAME = "WineClassifier"
+<<<<<<< HEAD
+METRIC_THRESHOLD_F1 = 0.88  # Mandatory assignment baseline specification
+=======
+METRIC_THRESHOLD_F1 = 0.90  # Quality gate proposed threshold from experimentation
+>>>>>>> conflict-simulation
+BATCH_LATENCY_LIMIT_MS = 30.0
+
+$ # Resolution: Reconcile experimental suggestion with mandatory baseline
+$ git add src/config.py
+$ git commit -m "Merge branch 'conflict-simulation' and resolve merge conflict in src/config.py"
+[main 985f384] Merge branch 'conflict-simulation' and resolve merge conflict in src/config.py

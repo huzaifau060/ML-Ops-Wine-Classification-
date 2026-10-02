@@ -1,0 +1,12 @@
+﻿* fe500ec style(config): wrap comment to adhere to flake8 line length <= 100
+*   985f384 Merge branch 'conflict-simulation' and resolve merge conflict in src/config.py
+|\  
+| * a3d3277 config: update F1 threshold to 0.90 on conflict-simulation branch
+* | f43c662 config: reinforce baseline F1 threshold to 0.88 on main
+|/  
+* e935707 feat(config): introduce central pipeline configuration parameters
+*   6a7a803 Merge pull request #1 from feature/mlflow-tracking
+|\  
+| * db159a8 feat(pipeline): implement modular data pipeline, dual classifier tuning, MLflow tracking and quality gates
+|/  
+* 49b4777 feat(init): initialize project structure, Makefile automation and CI workflow
