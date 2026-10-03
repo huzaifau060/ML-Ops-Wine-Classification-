@@ -94,3 +94,4 @@ GitHub Actions (`.github/workflows/ci.yml`) runs on every `push` and `pull_reque
 ## 6. Git Collaboration & Conflict Resolution
 
 This repository follows a feature-branch workflow (`feature/mlflow-tracking`) and documents an engineered merge conflict simulation (`conflict-simulation`) demonstrating conflict marker resolution on `main`.
+"# ML-Ops-Wine-Classification-" 
