@@ -28,3 +28,5 @@ Thumbs.db
 # Large staging / zip artifacts
 report_materials/*.zip
 report_materials/package_staging/
+
+report_materials/*.docx
