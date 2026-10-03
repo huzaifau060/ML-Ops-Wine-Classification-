@@ -24,3 +24,7 @@ mlflow.db-journal
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Large staging / zip artifacts
+report_materials/*.zip
+report_materials/package_staging/
